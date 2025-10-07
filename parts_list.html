@@ -262,7 +262,7 @@
         .knowledge-entry-detailed p { margin: 8px 0; line-height: 1.6; }
         .knowledge-entry-detailed .label { font-weight: bold; color: #2c3e50; } /* 使用你已有的文本颜色 */
         .knowledge-entry-detailed .fas { margin-right: 5px; opacity: 0.8; } /* 给知识库条目中的小图标加点样式 */
-        
+
         /* 敏感度评级颜色 (可以根据你的主题色调整) */
         .sensitivity-high { color: var(--accent-color-danger, #e74c3c); font-weight: bold; } 
         .sensitivity-medium { color: var(--accent-color-warning, #e67e22); font-weight: bold; } 
@@ -275,7 +275,7 @@
 <h3><i class="fas fa-qrcode"></i> 零件总览页面二维码</h3>
 <p>扫描此二维码可快速访问此 parts_list.html 页面。</p>
 <img src="master_qr/master_parts_list_qr.png" alt="零件总览页面二维码" title="扫描访问零件总览页面: https://lmy699.github.io/assembly-display/parts_list.html" style="width: 100px; height: 100px; display: block; margin-left: auto; margin-right: auto;"/>
-</div><div class="section" id="parts-list-section"><h2><i class="fas fa-th-list"></i> 所有零件列表</h2><p>共找到 <strong>4</strong> 个独立零件 (基于 ItemAI 去重)。使用上方搜索框进行筛选。</p><div style="overflow-x:auto;"><table class="parts-list-table" id="partsTable"><thead><tr>
+</div><div class="section" id="parts-list-section"><h2><i class="fas fa-th-list"></i> 所有零件列表</h2><p>共找到 <strong>6</strong> 个独立零件 (基于 ItemAI 去重)。使用上方搜索框进行筛选。</p><div style="overflow-x:auto;"><table class="parts-list-table" id="partsTable"><thead><tr>
 <th title="零件二维码">零件二维码</th>
 <th title="名称 / ID">名称 / ID</th>
 <th title="规格型号">规格型号</th>
@@ -284,95 +284,137 @@
 <th title="备注">备注</th>
 </tr></thead>
 <tbody>
-<tr data-search="part-cover-701 新泵盖 pc-701-v2 增强聚碳酸酯(pc) v2版本，加强筋设计，提升耐压性。">
+<tr data-search="part-body-701 齿轮泵体 gb-701-v1 球墨铸铁qt450-10 精密加工，内腔表面粗糙度ra1.6。">
 <td data-label="零件二维码">
-<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACF0lEQVR4nOVYQY6kMAwsEyS4pfcF4SND+iv7D6Sml/7H/mNPwHwkecBIyS1I0F65e44z0h5mfdj1IRJEyLLLrrIhxod2rT5+D/w7FwsRtXwCWmQiOstRaTknZsaKa5crXJjn56GVkkwd+jyFZrZjpAoHtbp4rHaMmz8dvrn/NR+fXvi4ecvpFvP5D7/4ogvLAStMyEQ77AzDRc05ExGAo7NLgpPSIzrrOAe/2+5ACWiW5+Oo1ucdEY2RDzcx+HSLm1LkFSgNkWc7hUfk+RJ3165aaZ8tM3o7Ap53NHc7onidtEPwdXyHYeZ0CegxuEYN8zVzoOpBbpY8VltHrVYDC6XxkgYUSMYpGS6kFTkwOPInI8I+uOaOAej16NUsvKSjAyWzbN5RZ2fFag/o7S7VzgzY3elV+92+cxyIR1d6mKCH+QqIil9F1Hmxs+RADXOK5MvLyQT+gaMrr+nqtTCv8fJtr9seiB3dGybYt5/5PGsVHAYnqiYtDgef9DCvQenk2l+9YSJcvrtVcq+EOXhhDo/wRcqD9FvQ43bghgfm6HH4shD5oiSp1UPGymsyIVe4ySSzxy/38ZnxDKCZASfcDpktHNQYbmHmhnkSPTdBIpfwR8WNZc0jtrPdPJhq4Vglknma3aisuEVm+1YrbyxMU2gF83bNTdCa26vnxkLp6AryFIqIq9SfZrXbXYYYI3quN73Sf/tb5Dftoj7q0phaZgAAAABJRU5ErkJggg==" alt="零件 PART-COVER-701 QR" title="二维码: 新泵盖 (PART-COVER-701)
-链接到: https://lmy699.github.io/assembly-display/part_PART-COVER-701.html" loading="lazy"/></div>
+<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACJ0lEQVR4nOVYQY6cMBCsBiTYkyfKA4yUdwT4VqTdHchwjLRP2KfswC9ys2+5rIRvRgIq8ux1I+WQ9CHxwSBaqFzurm63hXh3DNn734F/xzCJSIXwUFcIItKlKdMCF5KYkbvQ4Uxe3yatLQlSozGJuem9ZNil0vXHJL2P02lvy+OvYfzS0JiLK7mMPnS/+ccfMhg6zBhqEdlgrsgZ1cApIhC/2XJaYNMyRDod8AJtSjPM8g0zRpQw1NV5LVkK9NZeCJ5Gvyoxz9By86Rfa3IBwtlvtpq1wOfQo5qRc83wRcyLFYmNls+bkDsLPNTfEZ5c3YXNmqjGHHstrfTeHEZazKbwilI7AbyaW6zBR/GX5AAVcPCakkxjeguYzZLLmbFlrwN+4OyiLHmCpItpGSW1wMktoV1cOaXimuhrMc9SKZ9CF9Y6dBjq2IRygpLO8cb8MCTa5ezSm9NiXoAfXn3Mj/3TTXScl+H5h5LOCyBcXCXhm0djSgrM63PormpS2+xNb1FSSW2X3EXRCjhZRsgjhrYCzhO/Yq+hlNvBiX0Se05OpEMSu57OpwVIm81b3EcANi1IqaqBwGRXiXfHiHJq9kK7Y0Huqs+yeelCb+VRz+dkeeAe5JKnHLsBaukVqWOZTW+lM2sLSmG12qXi7SH+4tY7jJ40r4o+vw2ehhrAPao5lE7v3A5DVLJ8dCLhyVmaxZdX1Y6F6Sy1n0YrGYZUXFXA5b+9FvkJcY8/u2E6nsoAAAAASUVORK5CYII=" alt="零件 PART-BODY-701 QR" title="二维码: 齿轮泵体 (PART-BODY-701)
+链接到: https://lmy699.github.io/assembly-display/part_PART-BODY-701.html" loading="lazy"/></div>
 </td>
 <td data-label="名称 / ID">
-<div class="part-name-cell"><strong>新泵盖</strong><span>ID: PART-COVER-701</span></div>
+<div class="part-name-cell"><strong>齿轮泵体</strong><span>ID: PART-BODY-701</span></div>
 </td>
 <td data-label="规格型号">
-<code class="part-spec-cell">PC-701-V2</code>
+<code class="part-spec-cell">GB-701-V1</code>
 </td>
 <td data-label="材料">
-增强聚碳酸酯(PC)
+球墨铸铁QT450-10
 </td>
 <td data-label="单位">
 个
 </td>
 <td data-label="备注">
-V2版本，加强筋设计，提升耐压性。
+精密加工，内腔表面粗糙度Ra1.6。
 </td>
 </tr>
-<tr data-search="part-motor-702 新型直流无刷电机 pm-702-bldc-24v 铜线圈, 硅钢片, 铝壳 采用霍尔传感器，启动平稳，效率&amp;gt;85%。">
+<tr data-search="part-gear-702 主动齿轮 gr-702-z15 20crmnti渗碳淬火 齿数15，模数2.5，6级精度，渗碳层深0.8-1.2mm。">
 <td data-label="零件二维码">
-<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACJUlEQVR4nOVYMY7cMAwc2gbkq7RlOvkl1v4gn0lzwAbrPW+fJ+Qd6Sz/Ip3UpQlidTIgm4F8V94BKS4sEhaCbcEgOCNySBHjVbtVr38H/p0NR0Qtn4AWkYjOZamknBMzY8atixWuzNPzIgVJpA59HL2a9BCowkatLB+zHsJqT5tV+1/z8eaGDavVvNxDPP/hH++0odljRu0iUYaeUHMSc85EBGCz2i0w5egRnWWcg18sm0QLoNzz6yCW5x0RDUFtZmTw6R7Wsxzno+ddjx4l8ngN2bSzFOyTzkbtegAsZxxPycrA3gCo3YdzHBmIX3x3jtnoJBN5Axua3H77+Cl0tJPFrJtQlE6G8xmPXbyGtUt8QkgURl4ruVQbWU2aOUFnw7xcWYrzCo5WSoifO+WW2q3WUKeFVA3sltqj1xmqFBeU8KUixwF76nFlEA8m9ah9IjHYT4+kHR+izk5POgO9VKohNuZ79WvM6wO2jufl9vVHkmujRt/2QGihFZM9XVBEXerAXcC7ziiqZmAXSc6BmtuX5er4CVsnxTnYLUAizqZIuYdl9kpIz1FgL2BfSp5nUzoow04K9r7o+RNqHyvcSyeTw7v7eMt4AqAmwAC4AHQAIQY7M6ujzNFS+xJ5CX8QnFjmOJQmZrVgakqNlapwh+mV0sN+D8z6ZyM8sTCNvi2ct3NUXqpvr54nFlq2LiGOPh3iOomedleKzI666Llc90r/7bXIb6mGSdOfw/PoAAAAAElFTkSuQmCC" alt="零件 PART-MOTOR-702 QR" title="二维码: 新型直流无刷电机 (PART-MOTOR-702)
-链接到: https://lmy699.github.io/assembly-display/part_PART-MOTOR-702.html" loading="lazy"/></div>
+<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACH0lEQVR4nOVYQY7UMBCsnkSyOTk/cCTeQbw8hIcgZTdZZv61k+wruCU3LkjOzZEyKeQsnFjBBfoAPliRfSh1d1W1O0K8uh5Pr58D/87FICJ2XO5ri0VE7vJ20gEHB5JmB2B2tyFJ7MiBvVJKFqkxopvS82yIBjexSmkvf3zc6hTcWn9Jyx/HOP3mQljCNouZ0vjXMH5eJ8BxQrOcaa7uvgZQMKmBU0Qw4mON53mDBR5F7rTAA8nUAFiDN9P64EjuejovYUdcYPZlm/lU3cSOejVfJTVo5yQs/fp+PnNVS7vMpZdQXbwdZIMdqltmnZLDXdHlIncTyTOTxIIpaDlciMg1v9U2O42lvxdz1Yp8RzFlM/cpxIJ5TVCKHAccQiymHC/y5g21wHe3eV7xPejUuF4RnLGbALdl6rU4mitEi3D05Uu5D+qtRWyP3GtJDTlUEhK7yeyOk5bUwIGbT3BncndkCrHNZ1pplxI25Ib2PPcz4Axto5f29tDblCTCH6JLaoQLEZBQwZsnvyHBrUHrDQfurs+QfRZdweNLkXCxOxwut5PN5xeU1yIcDmPj8GKvRS73puhw12NeQOvN7nqfJLaeauBDnlh4qDuHP3CDVlc7vUws9IZ4V7VYg5Qwn1SHhnFZBRJvwQw8T+uD6rgksfLrm72/GErx4Q9jnH4B7ggLt701T9VX/9lmqY2qEwtwmdc7FAMCt1nL2+W//S3yDY93U8hUb6z2AAAAAElFTkSuQmCC" alt="零件 PART-GEAR-702 QR" title="二维码: 主动齿轮 (PART-GEAR-702)
+链接到: https://lmy699.github.io/assembly-display/part_PART-GEAR-702.html" loading="lazy"/></div>
 </td>
 <td data-label="名称 / ID">
-<div class="part-name-cell"><strong>新型直流无刷电机</strong><span>ID: PART-MOTOR-702</span></div>
+<div class="part-name-cell"><strong>主动齿轮</strong><span>ID: PART-GEAR-702</span></div>
 </td>
 <td data-label="规格型号">
-<code class="part-spec-cell">PM-702-BLDC-24V</code>
+<code class="part-spec-cell">GR-702-Z15</code>
 </td>
 <td data-label="材料">
-铜线圈, 硅钢片, 铝壳
-</td>
-<td data-label="单位">
-台
-</td>
-<td data-label="备注">
-采用霍尔传感器，启动平稳，效率&gt;85%。
-</td>
-</tr>
-<tr data-search="part-seal-703 o型密封圈 内径30mm, 线径2mm 丁腈橡胶(nbr) 邵氏硬度70a，耐油耐磨。">
-<td data-label="零件二维码">
-<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACHklEQVR4nOVYMY7cMAwc2gvYV2l/IAP5h+0q/0l5wG7WCy+QMo/IQ2L5XpAfSF2aAFYnA15PoLuUFyRFwiJRIcAWjBE55JC0EK+ua/H6e+DfOXAiUiOemxpRRPq8FVrgQhIzShd7XMjpZdNySZQGrTl3NcwQpMBdal0+nAwhueO9q/a/hvHTg9aMvuJyC7H/zS/+0IGhx4xrIyIbzISSSQ2cIgIJm63cApuvIdLrgB/QZZlhUW6YcUMFQ908b6TIgd7ZkeDxFtZej/PR04W1IRcgXsJm61lNZMI5k1xyLfAo5rMVSa0OOLibkSQ3m2S5eLQ42YocdCx/Cluos8iY3UiH2RyCVqqBXEqmLPDVbgYkeXlUspzHx8ZMuDZrnz2+4wQocX6A8ObXGuW2Puxw69sv75qvSS/gSMhS+irHHWA2mzodt4NuKUkuJ2SmbWpRekXO7bmRAiVrRDozmU2N8wItLp477g1a3Jv0tFw7M+ml2sVDuAEdR23Op1zAs/lJckntFj3OQbdcchMDiyyvdAugGO0cmbofMufRkTnp1CyHzXWVqcvVBYCl00q11tBziqu8dDKOW/jjGL+YWFD6mrIF6eNg5b3qxNLinjuZD76azKBm+QGIR4vZDJ9E9vUNKLBeD/x5xdGvD7gF0nw7KE8sQmkAnFDPsfJ6fTsM8RxwIvGjtzRLqCbViYVHgPfjzUqBa5MHNg1w+W9/i3wHU009A6NK9W4AAAAASUVORK5CYII=" alt="零件 PART-SEAL-703 QR" title="二维码: O型密封圈 (PART-SEAL-703)
-链接到: https://lmy699.github.io/assembly-display/part_PART-SEAL-703.html" loading="lazy"/></div>
-</td>
-<td data-label="名称 / ID">
-<div class="part-name-cell"><strong>O型密封圈</strong><span>ID: PART-SEAL-703</span></div>
-</td>
-<td data-label="规格型号">
-<code class="part-spec-cell">内径30mm, 线径2mm</code>
-</td>
-<td data-label="材料">
-丁腈橡胶(NBR)
+20CrMnTi渗碳淬火
 </td>
 <td data-label="单位">
 个
 </td>
 <td data-label="备注">
-邵氏硬度70A，耐油耐磨。
+齿数15，模数2.5，6级精度，渗碳层深0.8-1.2mm。
 </td>
 </tr>
-<tr data-search="part-impeller-704 离心叶轮 imp-704-pps 工程塑料pps 优化流道设计，提高效率。">
+<tr data-search="part-gear-703 从动齿轮 gr-703-z15 20crmnti渗碳淬火 齿数15，模数2.5，6级精度，与主动齿轮配对研磨。">
 <td data-label="零件二维码">
-<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACE0lEQVR4nOVYQarbMBScsQN2VzL0APJFYuVahf9/HBzoskdqlFxEOkBB3ilg+xUl21/axe9btFrIIGFGo6cZvScK3m2n6v1x4N+Z8CRbzK89q5nkoXSVFjhFBFfUPgNHkcuz09qSmT0G8+oAM0ZWWNnqxsNzjNh3q2u2v4bxy4nBTAG3dI7z4Q//+KAJIwFXnFy75wJzQS1ZDVxIgnFBMyXYsgzyoAMOebQNtYAJaPxzYFTTec/KjFFWOwmkO8e7EvMKwAuyi3fHOgHzMS62vWqBO5l8C9QeA77QfLdkHrRivhVL87JYMB0DBrzYRi3mt4TYCscom6HD1eyiltQgm1mQByNS7BWZqZZMHeYQkSkUldkMs1iRdJTs1KTWrS7vu7qsoPZ3Z9mbi6LJhGZDHbIrl2uhr8UcIglW5HHaZbR5KMtQinmFK4DWcwoYZvHmYhZASecV8NjxtPYZWPt8SyenG3M4WZApk3bMfXo4nIRc9AaX9GKOgivFT/GwV/EJ0NM5cOpndiV/MSP4ZiQYxex1KmgrzYbVZU+6rHalDsXbSxo1VziXTGaJH47xm4oFsBAukYd5tHxTrVgG1AEufQ3NxYyKzFEqFm9JczF3B+HOat3nu+eH8bOw2s5RxPzYNXqn/dGKo5dUsr3OTdDK23elYkE5cMif5m/BiklRj7mUikW6E83anS2r4jlKzPnfPov8BPryOuSIOeh2AAAAAElFTkSuQmCC" alt="零件 PART-IMPELLER-704 QR" title="二维码: 离心叶轮 (PART-IMPELLER-704)
-链接到: https://lmy699.github.io/assembly-display/part_PART-IMPELLER-704.html" loading="lazy"/></div>
+<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACJElEQVR4nOVYO46cQBB9BUjgqLlBI+0BfALDXMXHWGl2hxEjOfQRfJSdxhfpzpxYorNGYnhWe9K15WBdgV1BBZTQoz6vPgjxqpyL158D/47BiUiD+NQ1iCJyyKrQAheSmFG6eMCJvN6VVkiidOjN09DAjEEK3KTRzYeTMSTX3oZ6/2sYvzT0ZvI1l0uIhz98440Mhh4zzp2IbDBXlExq4BQRSNhs7RbY/BkiBx3wCkNuMyzKDTMuqGGoy/NOilzog50ItpewKnle/NR0Ye3IBYinsNlm1iu4ycszSq4FHsW8WJHU64CDO2CTcLNJlpNHj6OtyVGn4L4SwbzIMZgdMmA2Vcglp+O5W47Zc7LezYgkS8kkOp4X+NAC5qU9d+shR3zHEdDLuaFPAydm8ak3o1rOwd2MFkDp78MVZrNp0Ao7gJCAxy4B5y71sXZQ47kEeuM4sUGkM1ezqeW8wtxXSMDtAT1uHefl/OVb0ttk1qFxLQJgasrQHpGHuhLPuVm65eST5JE6LKXX4nkFxM++SZAhCE4f7Yxbp9fbHbesptzX6DGQXo/nbgHqPS9PQ54uACydFs97Q6YZj3LfZBy38OYYv79YZCl9Q9mCHOJo5Vn1Yukzxd3yyddXM6p5XgGxtZjfw8pwXR9AgfV64Flol2l9h0sgzfdK+3yN0gE4oplj7bX29uJ+sQgn3yBOeZ5vqK+qF0sW3tqLlQLnTqu3y3/7W+QHWKksnbUxXLkAAAAASUVORK5CYII=" alt="零件 PART-GEAR-703 QR" title="二维码: 从动齿轮 (PART-GEAR-703)
+链接到: https://lmy699.github.io/assembly-display/part_PART-GEAR-703.html" loading="lazy"/></div>
 </td>
 <td data-label="名称 / ID">
-<div class="part-name-cell"><strong>离心叶轮</strong><span>ID: PART-IMPELLER-704</span></div>
+<div class="part-name-cell"><strong>从动齿轮</strong><span>ID: PART-GEAR-703</span></div>
 </td>
 <td data-label="规格型号">
-<code class="part-spec-cell">IMP-704-PPS</code>
+<code class="part-spec-cell">GR-703-Z15</code>
 </td>
 <td data-label="材料">
-工程塑料PPS
+20CrMnTi渗碳淬火
 </td>
 <td data-label="单位">
 个
 </td>
 <td data-label="备注">
-优化流道设计，提高效率。
+齿数15，模数2.5，6级精度，与主动齿轮配对研磨。
+</td>
+</tr>
+<tr data-search="part-seal-704 o型密封圈 内径22mm, 线径3.5mm 氟橡胶(fkm) 耐高温耐油，工作温度-20~150℃。">
+<td data-label="零件二维码">
+<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACCUlEQVR4nOVYQa6bMBScB5Ggq5cbGKn3AK5ViSik5CY9SIFexD7Al2BnJMJUTv7yV+qifYvWCy+w0Ph5PDO2hfiw3bKPvwP/zsAkIiXWS1ViFZE2dZkVuJDEjNxvLa7k+OqslmSVCrVeqgjtg2R4SGnLxyR9wHR+NMXx1zB+OVDr4Asu97C2v/nHHxpQesy4VSKyQ0fkjGbgFBFI2F0xLXBpGiKtDfgJTbIZZvmOGXcUUNrqvJIsbfTGDQTP97C1hjr3sQlbRS7Aeg27K2c7zk+hBHJuGb6IfncisbYCr3V3EXqpgHXwW7vuTs0cbgZCSemDHioNZj0FK6mBE3fwULI4tEeUJWcU9lbePviUZdXWonPFgQ4w4hzPomPDIdVLH2vtXUGrymV5xVjQA0gq65AM3qhydO5JfGLaxRq5N+Qc91BiHVhi5aSj7macZ5iVPgKPCjUeVfyx3Bo7ncsClDwjAFpQmrMl51OiO4V6lBSpzWLK+TpQR9yaErhO/PoiwK5yx1HfdY6G9FY6B6elQ8Fkqg1TxABJeUbgz5Zm8NQ5n1ZvBj4CKMZ0ikSydVk6h8Zs2ZkCDR3IJfdFqtwK/ASsZ4dZ+28ix/YZFLi0CEbgr5b77RPugdS3k/X1dZXqyXk5r4W3OrdnrxsLdPApXXysdUdh5O143+3IyQM5gXSWMtpw8t8+i/wE84U6HyiTYGoAAAAASUVORK5CYII=" alt="零件 PART-SEAL-704 QR" title="二维码: O型密封圈 (PART-SEAL-704)
+链接到: https://lmy699.github.io/assembly-display/part_PART-SEAL-704.html" loading="lazy"/></div>
+</td>
+<td data-label="名称 / ID">
+<div class="part-name-cell"><strong>O型密封圈</strong><span>ID: PART-SEAL-704</span></div>
+</td>
+<td data-label="规格型号">
+<code class="part-spec-cell">内径22mm, 线径3.5mm</code>
+</td>
+<td data-label="材料">
+氟橡胶(FKM)
+</td>
+<td data-label="单位">
+个
+</td>
+<td data-label="备注">
+耐高温耐油，工作温度-20~150℃。
+</td>
+</tr>
+<tr data-search="part-cover-705 前端盖 fc-705-v1 球墨铸铁qt450-10 精加工轴承孔，表面粗糙度ra1.6。">
+<td data-label="零件二维码">
+<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACIklEQVR4nOVYsY6cMBB9A0hwlTddOvMla6p8UZpIKy0btr9PCnA/Yn9AJLuKkcxONLtJdyeluEyRuECAhYaZ92beA2K8ui7V6/eBf2djIaKOD0CHRESDHCqt4MTMWHHpU4Uz8/w4aJUkUY9jmnw7mzFQhZ06XTxWM4bNHXbX3v5ajDc3XNic4XgNafjDJ95pw7DHitpvRAVmRs1ZLTgTEYC9b5cIK9QjGnSCg3+tYkERaJfH5ajW5z0RjYF3OzH4cA3boNfnJeSjmfw983QOxXarWtkjIC0OOC5ob2ZEdjplb8CWw8dPaWIgPft+SMWarJN5A4p7D5jPoacbOaymCaJ0WoRrbHZh6zMfEDKFiTc1YXFRBA21pHuy7Q0n4Kg2ZGxBliEDivWyOUu9UVI18GyYpd+E7cyAKVaL7ZDhhkzxLG8w2nxE7TNptRrSM5Mzd1Hnxfz4EIMe5oslykiT56/Y+/wSL04L8woUCsTDBRpMy+QOJ4io62C+COYungR4WLioh3kFpInNt0PNHXBe7rXXwhz8EPB4siLlXvrNt0p6Dl5ize3NFLTiKDIAy4tW2Y+mIL+EyacKV3EyJbx7jLcWzxDzJFyDjHWKJwu1CbcwS9knAb72krmkr8Z26rEC2AazObAorBLbm98nXyivuAZm871R/mKhMPlOMO/W1Hot397IF4uYib3PT+nZWzYxtLMu27mIialFz/XcK/23v0V+AsfzQyePMnIAAAAAAElFTkSuQmCC" alt="零件 PART-COVER-705 QR" title="二维码: 前端盖 (PART-COVER-705)
+链接到: https://lmy699.github.io/assembly-display/part_PART-COVER-705.html" loading="lazy"/></div>
+</td>
+<td data-label="名称 / ID">
+<div class="part-name-cell"><strong>前端盖</strong><span>ID: PART-COVER-705</span></div>
+</td>
+<td data-label="规格型号">
+<code class="part-spec-cell">FC-705-V1</code>
+</td>
+<td data-label="材料">
+球墨铸铁QT450-10
+</td>
+<td data-label="单位">
+个
+</td>
+<td data-label="备注">
+精加工轴承孔，表面粗糙度Ra1.6。
+</td>
+</tr>
+<tr data-search="part-cover-706 后端盖 rc-706-v1 球墨铸铁qt450-10 精加工轴承孔，带排气螺堵。">
+<td data-label="零件二维码">
+<div class="part-qr-cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5AQAAAABc1qPxAAACMUlEQVR4nOVYQY6cMBCsBiSTk8kLjJR/ALd8KJeVRjvMztzzhM1PAuxH8C2XVfApRoKpyLPJbSPlkPQh8cEyWKgouqvLjRCvjlP2+n3g39kYRaRkBZQIItKlKdMCF5KYcKpDhiM5vExanyRIjSacZzPY3kuGXUrdeEy292tb7a25/jWMX260fm0tl4sP3W8+8Yc2LGdMyMdVZIMdkDOqgVNEAOytGRe4lHoinQ44+GNsLsoCmPHlslfTeS0ivTe7OxOsLn5VY361PThYziTPjO1yJESL+ZMn5R6nWjrcif3sRGKjlnCu8BHhTA7hPK9d2JxVq3DiN2cfbsXNSovJpnfRAm8AH45+rSMr+Cj+zFXJWEAuB5ikrgi7OXI5MrY6CQeO3ByvNumcnGNje2eUdI6kMporDkCbzDXR12KeoQmFDxnyF1OPTTAjJp2YF5jsB1cyVJ/QBI7229vFpyTUAUdY65B9zZO17TWn5fT4JWqBy1K5ElXua7kaCuzzY+gGJakNOCSBHZBczaFd8jmq1XZZ8rmckLMEjiMfsNdaMQfHRLXBwSUrn5PeZi2dF4Bdi7TypsHexlLg4tRonmQGy1ukXSp4qerpnWSkFC9tSdm8dKF3cq8Wc97Ka05yyWeTmBsl5gUQKocnXrC+H9Z3oMDNSn5e/FzcSZxw8aR9LpQ7Flb5XAIHlFMws9a5vUgdC0pZ9jq+CR9nR7t4M6h2LJTe2b26OMlSs6zEXP7b3yLfAT/wU15MnEFzAAAAAElFTkSuQmCC" alt="零件 PART-COVER-706 QR" title="二维码: 后端盖 (PART-COVER-706)
+链接到: https://lmy699.github.io/assembly-display/part_PART-COVER-706.html" loading="lazy"/></div>
+</td>
+<td data-label="名称 / ID">
+<div class="part-name-cell"><strong>后端盖</strong><span>ID: PART-COVER-706</span></div>
+</td>
+<td data-label="规格型号">
+<code class="part-spec-cell">RC-706-V1</code>
+</td>
+<td data-label="材料">
+球墨铸铁QT450-10
+</td>
+<td data-label="单位">
+个
+</td>
+<td data-label="备注">
+精加工轴承孔，带排气螺堵。
 </td>
 </tr>
 <tr id="noResultsRow" class="no-results-row" style="display: none;"><td colspan="6"><i class="fas fa-search-minus"></i> 未找到匹配的零件。</td></tr>
 </tbody></table></div></div></div>
     <button id="back-to-top" title="返回顶部"><i class="fas fa-arrow-up"></i></button>
     <footer role="contentinfo">
-        页面静态生成时间: <time datetime="2025-05-13 21:49:32">2025-05-13 21:49:32</time> | 数据来源: ASM 数据库<br>
+        页面静态生成时间: <time datetime="2025-10-07 19:22:55">2025-10-07 19:22:55</time> | 数据来源: ASM 数据库<br>
         公开访问基址: <a href="https://lmy699.github.io/assembly-display/" target="_blank" rel="noopener noreferrer">https://lmy699.github.io/assembly-display/</a><br>
         Generated by V4.8.4.1 - 基于 V4.8.4 调整QR位置
     </footer>
